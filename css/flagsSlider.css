@@ -1,0 +1,68 @@
+.flags {
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+}
+
+.flags-slider-container {
+    width: 100%;
+    overflow: hidden; 
+    position: relative;
+}
+
+.flags-slider {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    white-space: nowrap; 
+    overflow-x: scroll; 
+    scroll-behavior: smooth; 
+    scrollbar-width: none; 
+}
+
+
+.flags-slide {
+    min-width: 6.25rem;
+    margin: 0 .625rem;
+    position: relative;
+    display: inline-block; 
+}
+
+.flags-slide img {
+    width: 3.1875rem;
+    height: 3.1875rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.flags-tooltip {
+    position: absolute;
+    background-color: #ffffff;
+    color: #000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    box-shadow: 0rem 0rem 2.1406rem 0rem #0000001A;
+    width: 12.9763rem;
+    height: 3.505rem;
+    text-align: center;
+    font-size: 1.1356rem;
+    font-weight: 500;
+}
+
+.flags-tooltip span {
+    font-size: 1.1356rem;
+    font-weight: 600;
+    line-height: 1.3625rem;
+}
+
+.flags-tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: -1.625rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 1.25rem;
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent;
+}

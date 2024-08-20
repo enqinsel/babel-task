@@ -1,0 +1,60 @@
+
+header {
+    border-bottom: .2rem solid transparent;
+    position: fixed;
+    z-index: 10;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 2.5rem;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+header div {
+    width: 20.0625rem;
+    height: 4.3775rem;
+}
+
+header div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    list-style: none;
+}
+
+header ul li a {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header button {
+    width: 14.25rem;
+    height: 3.75rem;
+    opacity: 0rem;
+    background: var(--button-color);
+    margin-left: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+
+    border: none;
+    cursor: pointer;
+
+}
