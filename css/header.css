@@ -30,7 +30,7 @@ header {
 
 .mobile-list.active {
     display: flex;
-    max-height: 500px; /* Adjust based on content height */
+    max-height: 500px;
 }
 
 .menu-toggle {
@@ -106,13 +106,12 @@ header button {
     }
 
     .mobile-list {
-        /* display: block; */
         position: absolute;
         left: 0;
         top: 80%;
         width: auto;
         background: rgb(184, 184, 184);
-        /* display: flex; */
+
         flex-direction: column;
         align-items: center;
         padding: 10px;
