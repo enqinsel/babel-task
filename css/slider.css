@@ -87,7 +87,6 @@
     animation: slide 2s linear infinite;
 }
 
-
 @keyframes slide {
     0% {
         top: 0%;
@@ -164,4 +163,101 @@ button.next {
     background-color: #FFD401;
     border-radius: 50%;
 
+}
+
+
+
+@media (max-width: 767px) {
+    .content {
+        width: 200px;
+        height: 100.9504px;
+    }
+
+    .content h2 {
+        font-size: 24.7904px;
+        line-height: 2.5094rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .content button {
+        width: 7.25rem;
+        height: 2rem;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    button.prev,
+    button.next {
+        
+        padding: 0rem;
+       
+        width: 1.75rem;
+        height: 1.75rem;
+        font-size: .875rem;
+
+    }
+
+    button.prev {
+        left: 1.0rem;
+    }
+
+    button.next {
+        right: 1.0rem;
+    }
+
+    .scroll {
+        position: absolute;
+        bottom: 20%;
+        left: 45%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1339px)  {
+
+
+    .content {
+        width: 400px;
+        height: 100.9504px;
+    }
+
+    .content h2 {
+        font-size: 34.7904px;
+        line-height: 3.5094rem;
+    }
+
+    .content button {
+        width: 7.25rem;
+        height: 2rem;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    button.prev,
+    button.next {
+        
+        padding: 0rem;
+       
+        width: 2.75rem;
+        height: 2.75rem;
+        font-size: 1.875rem;
+
+    }
+
+    button.prev {
+        left: 1.0rem;
+    }
+
+    button.next {
+        right: 1.0rem;
+    }
+
+    .scroll {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+    }
+
+
+    
 }

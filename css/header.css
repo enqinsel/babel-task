@@ -1,19 +1,42 @@
-
 header {
     border-bottom: .2rem solid transparent;
     position: fixed;
     z-index: 10;
-
     left: 0;
     top: 0;
     width: 100%;
     padding: 2.5rem;
     text-transform: uppercase;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: opacity 0.3s ease;
+}
+
+.mobile-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(184, 184, 184);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    padding: 10px;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.mobile-list.active {
+    display: flex;
+    max-height: 500px; /* Adjust based on content height */
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 header div {
@@ -31,7 +54,6 @@ header ul {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-
     list-style: none;
 }
 
@@ -53,8 +75,80 @@ header button {
     font-weight: 500;
     line-height: 1.5rem;
     text-transform: uppercase;
-
     border: none;
     cursor: pointer;
+}
 
+@media (max-width: 767px) {
+    header ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    header div {
+        width: 221px;
+        height: 70.04px;
+    }
+
+    .mobile-list button {
+        width: 7.25rem;
+        height: 2.75rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+
+    .mobile-list {
+        /* display: block; */
+        position: absolute;
+        left: 0;
+        top: 80%;
+        width: auto;
+        background: rgb(184, 184, 184);
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1339px) {
+
+    header {
+        padding: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    header div {
+        width: 7.0625rem;
+        height: 2.3775rem;
+
+    }
+
+    header ul {
+        gap: 20px;
+    }
+
+    header ul li a {
+        font-size: .75rem;
+        line-height: .625rem;
+    }
+
+    header button {
+        width: 5.25rem;
+        height: 2.75rem;
+        margin-left: 1px;
+        font-size: 10px;
+        line-height: 1.5rem;
+    }
 }

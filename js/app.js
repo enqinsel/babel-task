@@ -11,3 +11,10 @@ window.addEventListener('scroll', () => {
         header.style.pointerEvents = 'auto';
     }
 });
+
+
+// header menü toggle
+
+document.querySelector('.menu-toggle').addEventListener('click', function () {
+    document.querySelector('.mobile-list').classList.toggle('active');
+});
